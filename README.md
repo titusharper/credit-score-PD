@@ -1,7 +1,7 @@
 # credit-score-PD
 The goal is to build a Probability of Default (PD) model that estimates the customer's risk of default (TARGET=1) as a probability.
 
-# Credit Risk PD (Home Credit) — Modeling Pipeline
+# Modeling Pipeline
 
 ## Purpose
 This repository contains the data science / modeling pipeline for predicting Probability of Default (PD) on the Home Credit dataset.  
