@@ -1,0 +1,19 @@
+# data & outputs
+data/
+outputs/
+*.parquet
+*.pkl
+*.joblib
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
