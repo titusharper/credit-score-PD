@@ -63,30 +63,31 @@ python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 ---
+```
 
 ## Results (V3 — best pipeline)
 
-**Validation setup:** 5-fold Stratified CV (OOF = out-of-fold predictions)
+Validation Setup: 5-fold Stratified CV (OOF = out-of-fold predictions)
 
 **Primary metrics (OOF):**
-- **ROC-AUC:** **0.7865**
+- ROC-AUC: 0.7865
   - Fold AUCs: 0.7840, 0.7950, 0.7830, 0.7892, 0.7817  
-  - Fold mean ± std: **0.7866 ± 0.0049**
-- **PR-AUC:** **0.2805**
-- **LogLoss:** **0.2374**
-- **Brier score:** **0.06594**
-- **ECE (15 bins):** **0.00414**
+  - Fold mean ± std: 0.7866 ± 0.0049
+- PR-AUC: 0.2805
+- LogLoss: 0.2374
+- Brier score: 0.06594
+- ECE (15 bins): 0.00414
 
 **Calibration (post-hoc on OOF):**
-- **Isotonic calibration** performed best vs Platt scaling:
-  - **Brier:** **0.06583**
-  - **LogLoss:** **0.23686**
-  - **ECE (15 bins):** ~0.0
+- Isotonic calibration performed best vs Platt scaling:
+  -  Brier: 0.06583
+  -  LogLoss: 0.23686
+  -  ECE (15 bins): ~0.0
 
 **Score statistics:**
-- Target rate (train): **0.08073**
-- Mean OOF prediction: **0.07795**
-- Mean test prediction: **0.06896** (min: 0.00320, max: 0.72688)
+- Target rate (train): 0.08073
+- Mean OOF prediction: 0.07795
+- Mean test prediction: 0.06896 (min: 0.00320, max: 0.72688)
 
 **Generated artifacts (under `CRPD_OUTPUTS/`):**
 - `submission_best_v3.csv`
